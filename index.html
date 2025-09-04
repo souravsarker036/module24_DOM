@@ -11,15 +11,57 @@
         <h1>this is my header no banner</h1>
     </header>
     <main>
-        <h1>Welcome to my dom</h1>
+        <section>
+            <h1>Welcome to my dom</h1>
         <ul>
             <li>abc</li>
+            <li>bcs</li>
+            <li>govt</li>
+            <li>efg</li>
         </ul>
+        </section>
+        <section>
+            <h1 id="food-title">food I love</h1>
+            <ul>
+                <li>Rice </li>
+                <li>potato</li>
+                <li>fish</li>
+                <li>Meat</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
     </main>
 
     <script>
-        console.log('hello from javaScript')
-        console.log('hello bole cole gelo')
+        // console.log('hello from javaScript')
+        // console.log('hello bole cole gelo')
+
+        const student = {
+            name: 'Abul Mia',
+            id: 121,
+            study: function(subject){
+                console.log('studying subject: ', subject)
+            }
+        }
+
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+        for(const li of liCollection){
+           console.log(li.innerText) 
+        }
+
+        // all h1 tags
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const heading of allHeadings){
+            // console.log(heading.innerText)
+        }
+
+        // get by id
+        const foodTitleH1 = document.getElementById('food-title');
+        console.log(foodTitleH1)
+        foodTitleH1.innerText = 'Foods i love most '
     </script>
     <script src="hello.js"></script>
 </body>
