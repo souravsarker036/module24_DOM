@@ -32,6 +32,15 @@
                 <li class="foreign">Pasta</li>
             </ul>
         </section>
+        <section id="players-container">
+            <h1>players</h1>
+            <ul>
+                <li>Messi</li>
+                <li>Pele</li>
+                <li>Ronaldo</li>
+                <li>Mbappe</li>
+            </ul>
+        </section>
     </main>
 
     <script>
@@ -42,14 +51,14 @@
             name: 'Abul Mia',
             id: 121,
             study: function(subject){
-                console.log('studying subject: ', subject)
+                // console.log('studying subject: ', subject)
             }
         }
 
         const liCollection = document.getElementsByTagName('li');
-        console.log(liCollection);
+        // console.log(liCollection);
         for(const li of liCollection){
-           console.log(li.innerText) 
+        //    console.log(li.innerText) 
         }
 
         // all h1 tags
@@ -60,9 +69,10 @@
 
         // get by id
         const foodTitleH1 = document.getElementById('food-title');
-        console.log(foodTitleH1)
+        // console.log(foodTitleH1)
         foodTitleH1.innerText = 'Foods i love most '
     </script>
     <script src="hello.js"></script>
+    <script src="cssInJs.js"></script>
 </body>
 </html>
